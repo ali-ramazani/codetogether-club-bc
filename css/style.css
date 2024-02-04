@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap");
 
 :root {
-  --main-blue-color: hsl(202, 62%, 40%);
+  --primary-blue-color: hsl(202, 62%, 40%);
   --primary-yellow-color: hsl(45, 97%, 54%);
 
   --secondary-font-style: "Source code pro", sans-serif;
@@ -84,11 +84,14 @@ a:hover {
   height: 100vh;
   background-color: aliceblue;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 3rem;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 3rem;
   padding: 2rem 2rem;
 }
 
+.hero-title {
+  font-size: 2.4rem;
+}
 .hero-right {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-height: 15rem;
@@ -167,7 +170,7 @@ a:hover {
 }
 
 .our-team {
-  /* background-color: lightgreen; */
+  background-color: var(--primary-blue-color);
 }
 
 .member-photo {
