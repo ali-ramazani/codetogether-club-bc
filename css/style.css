@@ -120,7 +120,7 @@ a:hover {
 
 /* Section Program */
 .section-program {
-  height: 100vh;
+  /* height: 100vh; */
   padding: 2rem 2rem;
 }
 
@@ -149,4 +149,45 @@ a:hover {
   width: 100%;
   height: auto;
   margin-bottom: 1rem;
+}
+
+/* Members Section */
+.our-team {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-members {
+  padding: 2rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.our-team {
+  /* background-color: lightgreen; */
+}
+
+.member-photo {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.team-member p:nth-last-child(2) {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.team-member p:nth-last-child(1) {
+  font-size: 0.6rem;
 }
