@@ -8,6 +8,15 @@
   --secondary-font-style: "Source code pro", sans-serif;
 
   --body-font-size: 1rem;
+
+  /* Primary Heading Font Sizes*/
+  --primary-heading-one: 3.2rem;
+  --primary-heading-two: 2.8rem;
+  --primary-heading-three: 2.4rem;
+  --primary-heading-four: 2.2rem;
+
+  --primary-body-font-size: 1.8rem;
+  --secondary-body-font-size: 1.6rem;
 }
 
 * {
@@ -32,9 +41,9 @@ h1 {
   font-size: 1.6rem;
 }
 
-p {
-  font-size: var(--body-font-size);
-}
+/* p {
+  font-size: var(--primary-body-font-size);
+} */
 
 a {
   text-decoration: none;
@@ -90,15 +99,20 @@ a:hover {
 }
 
 .hero-title {
-  font-size: 2.4rem;
+  font-size: var(--primary-heading-one);
+  line-height: 1.2;
 }
-.hero-right {
+
+.hero-second {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-height: 15rem;
-  background-color: lightblue;
   padding: 1rem 1rem;
   font-family: var(--secondary-font-style);
   font-size: 0.8rem;
+}
+
+.hero-second div:nth-last-child(1) p {
+  font-size: var(--secondary-font-style);
 }
 
 .up-next-div {
@@ -109,10 +123,14 @@ a:hover {
   font-weight: 600;
 }
 
+.up-next-div p:nth-last-child(1) {
+  font-size: var(--primary-body-font-size);
+}
+
 .link-button {
   background-color: #2779a7;
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
   display: inline-block;
   margin-top: 1.2rem;
 }
