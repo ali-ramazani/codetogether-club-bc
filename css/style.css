@@ -81,7 +81,7 @@ a:hover {
 }
 
 .hero {
-  height: 50vh;
+  height: 100vh;
   background-color: aliceblue;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -91,10 +91,11 @@ a:hover {
 
 .hero-right {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-height: 15rem;
   background-color: lightblue;
   padding: 1rem 1rem;
   font-family: var(--secondary-font-style);
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .up-next-div {
@@ -103,4 +104,40 @@ a:hover {
   display: flex;
   align-items: center;
   font-weight: 600;
+}
+
+.link-button {
+  background-color: #2779a7;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  margin-top: 1.2rem;
+}
+
+/* Section Program */
+.section-program {
+  height: 100vh;
+  padding: 2rem 2rem;
+}
+
+.programs {
+  display: flex;
+  gap: 2rem;
+}
+
+.program {
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.programs .program p:nth-last-child(2) {
+  font-weight: bold;
+}
+
+.program-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
 }
