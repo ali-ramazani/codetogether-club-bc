@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap");
+
+:root {
+  --main-blue-color: hsl(202, 62%, 40%);
+
+  --body-font-size: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: var(--body-font-size);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__ul {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+header {
+  height: 4rem;
+  background-color: #2779a7;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem 4rem;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: 5;
+}
+
+a:link {
+  color: #fff;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+.hero {
+  height: 50vh;
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem 2rem;
+}
