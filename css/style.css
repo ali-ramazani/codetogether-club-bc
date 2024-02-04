@@ -114,6 +114,10 @@ a:hover {
   margin-top: 1.2rem;
 }
 
+.banner-img {
+  width: 100%;
+}
+
 /* Section Program */
 .section-program {
   height: 100vh;
@@ -132,8 +136,13 @@ a:hover {
   justify-content: center;
 }
 
-.programs .program p:nth-last-child(2) {
+.programs .program p:nth-last-child(3) {
   font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.programs .program p:nth-last-child(2) {
+  margin-bottom: 0.5rem;
 }
 
 .program-img {
