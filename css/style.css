@@ -37,13 +37,16 @@ body {
   overflow-x: hidden;
 }
 
+section {
+  margin-bottom: 4rem;
+}
 h1 {
   font-size: 1.6rem;
 }
 
-/* p {
+p {
   font-size: var(--primary-body-font-size);
-} */
+}
 
 a {
   text-decoration: none;
@@ -112,7 +115,14 @@ a:hover {
 }
 
 .hero-second div:nth-last-child(1) p {
-  font-size: var(--secondary-font-style);
+  font-size: var(--secondary-body-font-size);
+  margin-bottom: 0.4rem;
+  color: red;
+}
+
+.hero-second div:nth-last-child(1) ul li {
+  color: orange;
+  font-size: var(--secondary-body-font-size - 2);
 }
 
 .up-next-div {
@@ -121,6 +131,7 @@ a:hover {
   display: flex;
   align-items: center;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .up-next-div p:nth-last-child(1) {
