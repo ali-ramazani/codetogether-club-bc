@@ -20,9 +20,12 @@
   --secondary-body-font-size-tablet: 2.8rem;
   --tertiary-body-font-size-tablet: 2.2rem;
 
+  /* Font size */
   --primary-body-font-size: 1.8rem;
   --secondary-body-font-size: 1.6rem;
   --footer-font-size: 1.2rem;
+  --primary-body-font-size-tablet: 2.2rem;
+  --secondary-body-font-size-tablet: 2rem;
 }
 
 * {
@@ -406,6 +409,7 @@ footer {
   .up-next-div p:nth-last-child(1) {
     font-size: var(--primary-heading-two-tablet);
   }
+
   .hero-second div:nth-last-child(1) p {
     font-size: var(--secondary-body-font-size-tablet);
     margin-bottom: 0.4rem;
@@ -441,5 +445,52 @@ footer {
     width: 30%;
     height: 30%;
     border-radius: 50%;
+  }
+
+  .link-button {
+    padding: 1.5rem 3rem;
+    font-size: var(--primary-body-font-size-tablet);
+    margin-top: 1.5rem;
+  }
+
+  .section-testimonials {
+    font-size: var(--secondary-body-font-size-tablet);
+  }
+
+  blockquote p {
+    font-size: var(--primary-body-font-size-tablet);
+  }
+
+  footer > *:not(.footer-title) {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .team-members {
+    gap: 2rem;
+  }
+
+  .footer-title {
+    font-size: var(--primary-heading-two-tablet);
+  }
+
+  .footer-message {
+    font-size: var(--primary-body-font-size-tablet);
+  }
+
+  .social-media {
+    gap: 2.5rem;
+  }
+
+  .socials {
+    font-size: 3rem;
+  }
+
+  .newsletter-email-bar {
+    height: 5rem;
+  }
+
+  .newsletter-signup {
+    height: 4rem;
   }
 }
