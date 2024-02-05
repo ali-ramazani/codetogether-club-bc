@@ -26,6 +26,12 @@
   --footer-font-size: 1.2rem;
   --primary-body-font-size-tablet: 2.2rem;
   --secondary-body-font-size-tablet: 2rem;
+
+  --primary-heading-one-desktop: 4.2rem;
+  --primary-heading-two-desktop: 3.6rem;
+  --primary-body-font-size-desktop: 2.6rem;
+  --secondary-body-font-size-desktop: 2.6rem;
+  --tertiary-body-font-size-desktop: 2rem;
 }
 
 * {
@@ -492,5 +498,96 @@ footer {
 
   .newsletter-signup {
     height: 4rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hero-title {
+    font-size: var(--primary-heading-one-desktop);
+  }
+
+  h2 {
+    font-size: var(--primary-heading-two-desktop);
+  }
+
+  .hero {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4rem 4rem;
+    column-gap: 3rem;
+  }
+
+  .hero-banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-banner-images {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .link-button {
+    padding: 2rem 4rem;
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    /* border-radius: 1rem; */
+  }
+
+  .hero-second {
+    max-height: 30rem;
+  }
+
+  .hero-second div:nth-last-child(1) p {
+    font-size: var(--secondary-body-font-size-desktop);
+    margin-bottom: 0.8rem;
+  }
+
+  .hero-second div:nth-last-child(1) ul li {
+    font-size: var(--tertiary-body-font-size-desktop);
+    margin-bottom: 1rem;
+  }
+
+  .up-next-div p:nth-last-child(1) {
+    font-size: var(--primary-body-font-size-desktop);
+  }
+
+  .up-next-div {
+    background-color: var(--primary-yellow-color);
+    height: 4rem;
+    /* display: flex;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 1rem; */
+  }
+
+  .programs {
+    display: flex;
+    flex-direction: row;
+  }
+
+  blockquote p {
+    font-size: 2.4rem;
+  }
+
+  blockquote footer {
+    font-size: 2.2rem;
+  }
+
+  .team-members {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-title {
+    font-size: 2.4rem;
+  }
+
+  .copyright {
+    justify-self: center;
   }
 }
