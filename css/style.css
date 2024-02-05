@@ -74,11 +74,11 @@ nav {
 }
 
 header {
-  height: 4rem;
+  height: 6rem;
   background-color: #2779a7;
   display: flex;
   justify-content: space-between;
-  font-size: 2rem 4rem;
+  padding: 2rem 2rem;
   color: #fff;
 }
 
@@ -142,12 +142,17 @@ a:hover {
   font-size: var(--primary-body-font-size);
 }
 
+.hero-second div ul {
+  font-size: var(--body-font-size);
+}
+
 .link-button {
   background-color: #2779a7;
   color: #fff;
   padding: 1rem 2rem;
   display: inline-block;
   margin-top: 1.2rem;
+  font-size: var(--body-font-size);
 }
 
 .banner-img {
@@ -241,15 +246,27 @@ footer {
 
 .footer-title {
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
 }
 
 .footer {
   font-size: var(--footer-font-size);
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  grid-row-gap: 3rem;
+  grid-row-gap: 2rem;
+}
+
+.footer > .recent-news {
+  row-gap: 0;
+}
+
+.footer ul {
   font-size: var(--footer-font-size);
+}
+
+.footer ul li span {
+  color: #333;
+  font-size: 1rem;
 }
 
 .social-media {
@@ -263,7 +280,6 @@ footer {
   font-size: 2rem;
 }
 
-/* Base styles */
 .newsletter-input-div {
   display: flex;
   width: 100%;
