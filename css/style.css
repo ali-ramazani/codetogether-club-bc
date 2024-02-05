@@ -17,6 +17,7 @@
 
   --primary-body-font-size: 1.8rem;
   --secondary-body-font-size: 1.6rem;
+  --footer-font-size: 1.2rem;
 }
 
 * {
@@ -158,7 +159,8 @@ a:hover {
 
 .programs {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .program {
@@ -185,7 +187,6 @@ a:hover {
 
 /* Members Section */
 .our-team {
-  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -195,6 +196,7 @@ a:hover {
 .team-members {
   padding: 2rem 2rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -203,8 +205,8 @@ a:hover {
 }
 
 .member-photo {
-  width: 60%;
-  height: 60%;
+  width: 40%;
+  height: 40%;
   border-radius: 50%;
 }
 
@@ -213,13 +215,28 @@ a:hover {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .team-member p:nth-last-child(2) {
-  font-size: 0.8rem;
+  font-size: var(--primary-body-font-size);
   font-weight: bold;
 }
 
 .team-member p:nth-last-child(1) {
-  font-size: 0.6rem;
+  font-size: var(--secondary-body-font-size);
+}
+
+/* footer */
+.footer > p {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.footer {
+  padding: 2rem 2rem;
+  font-size: var(--footer-font-size);
+  background-color: orange;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: var(--footer-font-size);
 }
