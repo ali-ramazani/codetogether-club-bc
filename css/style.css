@@ -375,7 +375,7 @@ footer {
 
 /********Response Design*********/
 /* Tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 641px) and (max-width: 1024px) {
   .hero {
     grid-template-columns: repeat(2, 1fr);
     padding: 3rem 3rem;
@@ -401,5 +401,11 @@ footer {
 
   .section-testimonials {
     padding: 3rem 3rem;
+  }
+
+  .member-photo {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
   }
 }
