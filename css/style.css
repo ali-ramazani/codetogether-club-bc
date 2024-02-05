@@ -209,7 +209,7 @@ blockquote {
   margin: 0;
 }
 
-blockquote p {
+blockquote blockquote p {
   padding: 15px;
   background: #eee;
   border-radius: 5px;
@@ -371,4 +371,35 @@ footer {
 .copyright {
   display: flex;
   justify-content: center;
+}
+
+/********Response Design*********/
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem 3rem;
+  }
+
+  .hero-banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-banner-images {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .section-program {
+    padding: 3rem 3rem;
+  }
+
+  .programs {
+    flex-direction: row;
+  }
+
+  .section-testimonials {
+    padding: 3rem 3rem;
+  }
 }
