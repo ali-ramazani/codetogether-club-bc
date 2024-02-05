@@ -41,8 +41,13 @@ body {
 section {
   margin-bottom: 4rem;
 }
+
 h1 {
   font-size: 1.6rem;
+}
+
+h2 {
+  font-size: var(--primary-heading-two);
 }
 
 p {
@@ -94,7 +99,6 @@ a:hover {
 }
 
 .hero {
-  height: 100vh;
   background-color: aliceblue;
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -105,6 +109,7 @@ a:hover {
 .hero-title {
   font-size: var(--primary-heading-one);
   line-height: 1.2;
+  margin-bottom: 1.5rem;
 }
 
 .hero-second {
@@ -118,11 +123,9 @@ a:hover {
 .hero-second div:nth-last-child(1) p {
   font-size: var(--secondary-body-font-size);
   margin-bottom: 0.4rem;
-  color: red;
 }
 
 .hero-second div:nth-last-child(1) ul li {
-  color: orange;
   font-size: var(--secondary-body-font-size - 2);
 }
 
@@ -164,7 +167,8 @@ a:hover {
 }
 
 .program {
-  box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,15 +232,29 @@ a:hover {
 }
 
 /* footer */
-.footer > p {
-  margin-bottom: 1rem;
+
+footer {
+  padding: 2rem 2rem;
+}
+
+.footer-title {
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 .footer {
-  padding: 2rem 2rem;
   font-size: var(--footer-font-size);
-  background-color: orange;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 2rem;
   font-size: var(--footer-font-size);
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.socials {
+  color: var(--primary-blue-color);
+  font-size: 2rem;
 }
