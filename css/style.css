@@ -10,10 +10,12 @@
   --body-font-size: 1rem;
 
   /* Primary Heading Font Sizes*/
-  --primary-heading-one: 3.2rem;
-  --primary-heading-two: 2.8rem;
-  --primary-heading-three: 2.4rem;
-  --primary-heading-four: 2.2rem;
+  --primary-heading-one-mobile: 3.2rem;
+  --primary-heading-two-mobile: 2.8rem;
+  --primary-heading-three-mobile: 2.4rem;
+  --primary-heading-four-mobile: 2.2rem;
+
+  --primary-heading-one-tablet: 4.2rem;
 
   --primary-body-font-size: 1.8rem;
   --secondary-body-font-size: 1.6rem;
@@ -47,7 +49,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--primary-heading-two);
+  font-size: var(--primary-heading-two-mobile);
   margin-bottom: 2rem;
 }
 
@@ -108,7 +110,7 @@ a:hover {
 }
 
 .hero-title {
-  font-size: var(--primary-heading-one);
+  font-size: var(--primary-heading-one-mobile);
   line-height: 1.2;
   margin-bottom: 1.5rem;
 }
@@ -376,9 +378,13 @@ footer {
 /********Response Design*********/
 /* Tablet */
 @media (min-width: 641px) and (max-width: 1024px) {
+  .hero-title {
+    font-size: var(--primary-heading-one-tablet);
+  }
   .hero {
     grid-template-columns: repeat(2, 1fr);
     padding: 3rem 3rem;
+    column-gap: 1.5rem;
   }
 
   .hero-banner {
